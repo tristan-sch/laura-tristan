@@ -6,7 +6,7 @@ import { SectionDescription } from "../misc/Typography.js";
 
 const Container = tw.div`relative`;
 const TwoColumn = tw.div`flex flex-col md:flex-row justify-between max-w-screen-xl mx-auto py-20 md:py-24`;
-const ImageColumn = tw.div`hidden lg:block w-full max-w-md mx-auto md:max-w-none md:mx-0 md:w-6/12 lg:w-5/12 flex-shrink-0 h-80 md:h-auto`;
+const ImageColumn = tw.div`hidden md:block w-full max-w-md mx-auto md:max-w-none md:mx-0 md:w-6/12 lg:w-5/12 flex-shrink-0 h-80 md:h-auto`;
 const TextColumn = tw.div`md:mr-8 lg:mr-16 md:order-first`;
 
 const TextContent = tw.div`lg:py-8`;

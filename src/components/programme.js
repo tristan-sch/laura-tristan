@@ -5,7 +5,7 @@ import hero from "../../public/404.png";
 import { ProgrammeContainerWrapper } from "../misc/Layouts.js";
 
 const Container = tw.div`relative`;
-const TwoColumn = tw.div`flex flex-col lg:flex-row justify-between max-w-screen-xl mx-auto py-20 md:py-24 items-center`;
+const TwoColumn = tw.div`flex flex-col lg:flex-row justify-between max-w-screen-xl mx-auto pb-20 pt-10 md:py-24 items-center`;
 const Column = tw.div`w-full max-w-md mx-auto md:max-w-none md:mx-0`;
 const ImageColumn = tw(
   Column
