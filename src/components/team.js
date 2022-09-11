@@ -30,12 +30,9 @@ const Name = tw.span`mt-1 text-xl font-medium text-gray-900 font-primary`;
 
 //Slider
 const SliderWrapper = tw.div`pt-6 sm:hidden`;
-const SliderPosition = styled.span`
-  ${({ color }) => `
-  text-${color};
-`};
-  ${tw`font-medium text-center tracking-wide text-sm font-secondary pt-6`}
-`;
+
+const SliderPosition = tw.span`font-bold text-center tracking-wide text-sm font-secondary pt-6`;
+const styles = { boy: tw`text-red-500`, girl: tw`text-primary` };
 
 const ControlsWrapper = tw.div`flex flex-col items-center sm:items-stretch sm:flex-row justify-between`;
 const Controls = tw.div`flex items-center`;
@@ -50,73 +47,73 @@ const Team = ({
       imageSrc: `${Florian.src}`,
       position: "Témoin 👰🏻",
       name: "Florian",
-      color: "text-primary",
+      color: "girl",
     },
     {
       imageSrc: `${Karsten.src}`,
       position: "Témoin 🤵🏻",
       name: "Karsten",
-      color: "secondary",
+      color: "boy",
     },
     {
       imageSrc: `${Laetitia.src}`,
       position: "Témoin 👰🏻",
       name: "Laëtitia",
-      color: "primary",
+      color: "girl",
     },
     {
       imageSrc: `${Raphael.src}`,
       position: "Témoin 🤵🏻",
       name: "Raphaël",
-      color: "secondary",
+      color: "boy",
     },
     {
       imageSrc: `${Antonin.src}`,
       position: "Garçon d'honneur 🇫🇷",
       name: "Antonin",
-      color: "secondary",
+      color: "boy",
     },
     {
       imageSrc: `${Camille.src}`,
       position: "Demoiselle d'honneur 🇫🇷",
       name: "Camille",
-      color: "primary",
+      color: "girl",
     },
     {
       imageSrc: `${Davy.src}`,
       position: "Garçon d'honneur 🇫🇷",
       name: "Davy",
-      color: "primary",
+      color: "boy",
     },
     {
       imageSrc: `${Margaux.src}`,
       position: "Demoiselle d'honneur 🇫🇷",
       name: "Margaux",
-      color: "primary",
+      color: "girl",
     },
     {
       imageSrc: `${Aurel.src}`,
       position: "Garçon d'honneur 🇮🇸",
       name: "Aurel",
-      color: "secondary",
+      color: "boy",
     },
     {
       imageSrc: `${Laurie.src}`,
       position: "Demoiselle d'honneur 🇮🇸",
       name: "Laurie",
-      color: "primary",
+      color: "girl",
     },
     {
       imageSrc: `${Guillaume.src}`,
       position: "Garçon d'honneur 🇮🇸",
       name: "Guillaume",
-      color: "primary",
+      color: "boy",
     },
     {
       imageSrc: `${Lea.src}`,
       position: "Demoiselle d'honneur 🇮🇸",
       name: "Léa",
-      color: "primary",
+      color: "girl",
     },
   ],
 }) => {
@@ -160,7 +157,7 @@ const Team = ({
                 height={160}
               />
               <CardContent>
-                <SliderPosition color={staff.color}>
+                <SliderPosition css={styles[staff.color]}>
                   {staff.position}
                 </SliderPosition>
                 <Name>{staff.name}</Name>
