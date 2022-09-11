@@ -199,7 +199,7 @@ const Team = ({
                     width={160}
                     height={160}
                   />
-                  <SliderPosition color={staff.color}>
+                  <SliderPosition css={styles[staff.color]}>
                     {staff.position}
                   </SliderPosition>
                   <Name>{staff.name}</Name>
