@@ -1,94 +1,89 @@
 import React from "react";
 import tw from "twin.macro";
 import Image from "next/image";
-import {
-  SectionHeading,
-  Subheading as SubheadingBase,
-} from "../misc/Headings.js";
+import MailIcon from "../../public/mail.svg";
+import PhoneIcon from "../../public/phone.svg";
+import logo from "../../public/logo.png";
+import LocationIcon from "../../public/map-pin.svg";
 import { SectionDescription } from "../misc/Typography.js";
 import { Container, ContactContainer } from "../misc/Layouts.js";
 
-const Heading = tw(SectionHeading)``;
-const Subheading = tw(SubheadingBase)`text-center mb-3`;
-const Description = tw(SectionDescription)`text-center mx-auto`;
+const HeadingTitle = tw.h5`text-4xl sm:text-5xl font-black tracking-wide text-center font-primary`;
+const Subheading = tw.h5`text-center mb-4 font-primary text-primary font-bold  text-2xl`;
+const Description = tw(SectionDescription)`mx-auto text-center font-secondary`;
 const ThreeColumnContainer = tw.div`mt-10 flex flex-col items-center justify-center sm:items-stretch sm:flex-row flex-wrap  max-w-screen-lg mx-auto`;
 const Column = tw.div`lg:w-1/3 max-w-xs`;
 const Card = tw.a`flex flex-col items-center text-center h-full mx-4 px-4 py-8 rounded transition-transform duration-300 hover:cursor-pointer transform hover:scale-105`;
 const ImageContainer = tw.span`text-center rounded-full p-4 bg-gray-100`;
-const Title = tw.span`mt-4 font-bold text-xl leading-none font-nunito`;
-const SubDescription = tw.p`mt-4 text-sm font-medium font-openSans`;
-const DescriptionLink = tw.span`mt-auto inline-flex items-center pt-5 text-sm font-bold text-primary-dark leading-none hocus:text-primary-dark transition duration-300`;
+const Title = tw.span`mt-4 font-bold text-xl leading-none font-primary`;
+const SubDescription = tw.p`mt-4 text-sm font-medium font-secondary`;
+const DescriptionLink = tw.span`mt-auto inline-flex items-center pt-5 text-sm font-bold text-primary leading-none hocus:text-primary transition duration-300`;
 // Footer
 const Footer = tw.div`relative bg-gray-100`;
 const FiveColumns = tw.div`max-w-screen-xl mx-auto py-12 lg:py-12 flex flex-wrap items-center`;
-const ColumnFooter = tw.div` w-1/2 md:w-1/4 flex items-center justify-center `;
-const ColumnHeading = tw.h5`font-bold`;
+const ColumnFooter = tw.div` w-full md:w-1/3 flex items-center justify-center `;
+const ColumnHeading = tw.h5`font-bold font-secondary`;
 const LinkList = tw.ul`hidden mt-4 text-sm font-medium md:block`;
-const LinkListItem = tw.li`mt-3`;
-const Link = tw.a`border-b-2 border-transparent hocus:text-primary-dark `;
+const LinkListItem = tw.li`mt-3 font-primary`;
+const Link = tw.a`border-b-2 border-transparent hocus:text-primary `;
 const LogoContainer = tw.div`flex items-center justify-center `;
 
-const Contact = ({ contact, menus }) => {
+const Contact = () => {
   return (
     <Container id="contact">
       <ContactContainer>
-        {menus.nodes.map((menu, i) => (
-          <Subheading key={i}>{menu.menuItems.edges[3].node.label}</Subheading>
-        ))}
-        <Heading>{contact.contact.contactHeading}</Heading>
-        <Description>{contact.contact.contactDescription}</Description>
+        <Subheading>Contact</Subheading>
+        <HeadingTitle>Contactez-nous</HeadingTitle>
+        <Description>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua enim.
+        </Description>
         <ThreeColumnContainer>
           <Column>
-            <Card href={contact.contact.adressUrl} target="_blank">
+            <Card href="https://goo.gl/maps/6oEP4vgHNPU3o3FF8" target="_blank">
               <ImageContainer>
                 <Image
                   width={24}
                   height={24}
-                  alt=""
-                  src={contact.contact.adressPicto.mediaItemUrl}
+                  alt="Map-pin icon"
+                  src={LocationIcon}
                 />
               </ImageContainer>
-              <Title>Our office</Title>
-              <SubDescription>{contact.contact.adress}</SubDescription>
-
+              <Title>Le lieu</Title>
+              <SubDescription>
+                Kríunesvegur 12 <br /> 203 Kópavogur
+              </SubDescription>
               <DescriptionLink>
-                <span>Visit us</span>
+                <span>Voir sur Maps</span>
               </DescriptionLink>
             </Card>
           </Column>
           <Column>
-            <Card href={contact.contact.phoneUrl}>
+            <Card href="tel:+3548889804">
               <ImageContainer>
                 <Image
                   width={24}
                   height={24}
-                  alt=""
-                  src={contact.contact.phonePicto.mediaItemUrl}
+                  alt="Phone Icon"
+                  src={PhoneIcon}
                 />
               </ImageContainer>
-              <Title>Phone</Title>
-              <SubDescription>{contact.contact.phone}</SubDescription>
-
+              <Title>Téléphone</Title>
+              <SubDescription>+354 888 9804</SubDescription>
               <DescriptionLink>
-                <span>Call us</span>
+                <span>Appelez-nous</span>
               </DescriptionLink>
             </Card>
           </Column>
           <Column>
-            <Card href={contact.contact.emailUrl}>
+            <Card href="mailto:schmale.tristan@gmail.com">
               <ImageContainer>
-                <Image
-                  width={24}
-                  height={24}
-                  alt=""
-                  src={contact.contact.emailPicto.mediaItemUrl}
-                />
+                <Image width={24} height={24} alt="Email Icon" src={MailIcon} />
               </ImageContainer>
               <Title>Email</Title>
-              <SubDescription>{contact.contact.email}</SubDescription>
-
+              <SubDescription>schmale.tristan@gmail.com</SubDescription>
               <DescriptionLink>
-                <span>Write us</span>
+                <span>Écrivez-nous</span>
               </DescriptionLink>
             </Card>
           </Column>
@@ -99,76 +94,57 @@ const Contact = ({ contact, menus }) => {
           <ColumnFooter>
             <LinkList>
               <ColumnHeading>Menu</ColumnHeading>
-              {menus.nodes.map((menu, i) => (
-                <div key={i}>
-                  {menu.menuItems.edges.map(({ node }) => (
-                    <Link key={node.id} href={node.path} passHref>
-                      <LinkListItem>{node.label}</LinkListItem>
-                    </Link>
-                  ))}
-                </div>
-              ))}
+              <div>
+                <Link href="#" passHref>
+                  <LinkListItem>Label</LinkListItem>
+                </Link>
+              </div>
+              <div>
+                <Link href="#" passHref>
+                  <LinkListItem>Label</LinkListItem>
+                </Link>
+              </div>
+              <div>
+                <Link href="#" passHref>
+                  <LinkListItem>Label</LinkListItem>
+                </Link>
+              </div>
+              <div>
+                <Link href="#" passHref>
+                  <LinkListItem>Label</LinkListItem>
+                </Link>
+              </div>
             </LinkList>
           </ColumnFooter>
           <ColumnFooter>
             <LinkList>
               <ColumnHeading>Useful links</ColumnHeading>
               <LinkListItem>
-                <Link
-                  href={contact.contact.usefulLinks.usefulLink1Link}
-                  target="_blank"
-                >
-                  {contact.contact.usefulLinks.usefulLink1}
+                <Link href="#" target="_blank">
+                  Useful Link
                 </Link>
               </LinkListItem>
               <LinkListItem>
-                <Link
-                  href={contact.contact.usefulLinks.usefulLink2Link}
-                  target="_blank"
-                >
-                  {contact.contact.usefulLinks.usefulLink2}
+                <Link href="#" target="_blank">
+                  Useful Link
                 </Link>
               </LinkListItem>
               <LinkListItem>
-                <Link
-                  href={contact.contact.usefulLinks.usefulLink3Link}
-                  target="_blank"
-                >
-                  {contact.contact.usefulLinks.usefulLink3}
+                <Link href="#" target="_blank">
+                  Useful Link
                 </Link>
               </LinkListItem>
               <LinkListItem>
-                <Link
-                  href={contact.contact.usefulLinks.usefulLink4Link}
-                  target="_blank"
-                >
-                  {contact.contact.usefulLinks.usefulLink4}
+                <Link href="#" target="_blank">
+                  Useful Link
                 </Link>
               </LinkListItem>
             </LinkList>
           </ColumnFooter>
           <ColumnFooter>
             <LogoContainer>
-              <Link href={contact.contact.logo2Link} target="_blank">
-                <Image
-                  width={150}
-                  height={150}
-                  alt={contact.contact.logo2.altText}
-                  src={contact.contact.logo2.sourceUrl}
-                />
-              </Link>
-            </LogoContainer>
-          </ColumnFooter>
-          <ColumnFooter>
-            <LogoContainer>
-              <Link href="/#">
-                <Image
-                  width={150}
-                  height={105}
-                  alt={contact.contact.logo1.altText}
-                  src={contact.contact.logo1.sourceUrl}
-                  className="logoFooter"
-                />
+              <Link href="#">
+                <Image width={150} height={150} alt="" src={logo} />
               </Link>
             </LogoContainer>
           </ColumnFooter>

@@ -2,28 +2,49 @@ import React, { useState } from "react";
 import { motion } from "framer-motion";
 import tw from "twin.macro";
 import Image from "next/image";
-import {
-  SectionHeading,
-  Subheading as SubheadingBase,
-} from "../misc/Headings.js";
 import { SectionDescription } from "../misc/Typography.js";
 import { Container, FaqContainer } from "../misc/Layouts.js";
+import ChevronDown from "../../public/chevronDown.svg";
 
-const Subheading = tw(SubheadingBase)`mb-4 text-center`;
-const Heading = tw(SectionHeading)`w-full`;
-const Description = tw(SectionDescription)`w-full text-center font-openSans`;
+const HeadingContainer = tw.div``;
+const HeadingTitle = tw.h5`text-4xl sm:text-5xl font-black tracking-wide text-center font-primary`;
+const Subheading = tw.h5`text-center mb-4 font-primary text-primary font-bold  text-2xl`;
+const HighlightedText = tw.span`text-center`;
+const Description = tw(SectionDescription)`mx-auto text-center font-secondary`;
 const Column = tw.div`flex flex-col items-center`;
-const HeaderContent = tw.div``;
 const QuestionsContainer = tw.dl`mt-12 max-w-4xl relative`;
 const FAQ = tw.div`cursor-pointer select-none mt-5 px-8 sm:px-10 py-5 sm:py-4 rounded-lg text-gray-800 hover:text-gray-900 bg-gray-200 hover:bg-gray-300 transition duration-300`;
 const Question = tw.dt`flex justify-between items-center`;
-const QuestionText = tw.span`text-lg lg:text-xl font-semibold font-nunito`;
+const QuestionText = tw.span`text-lg lg:text-xl font-semibold font-primary`;
 const QuestionToggleIcon = motion(tw.span`ml-2 transition duration-300`);
 const Answer = motion(
-  tw.dd`pointer-events-none text-sm sm:text-base leading-relaxed font-openSans`
+  tw.dd`pointer-events-none text-sm sm:text-base leading-relaxed font-secondary`
 );
 
-const Faq = ({ menus, faq, questions }) => {
+const Faq = ({
+  questions = [
+    {
+      title: "Lorem ipsum dolor sit amet ?",
+      answer:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua enim.",
+    },
+    {
+      title: "Lorem ipsum dolor sit amet ?",
+      answer:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua enim.",
+    },
+    {
+      title: "Lorem ipsum dolor sit amet ?",
+      answer:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua enim.",
+    },
+    {
+      title: "Lorem ipsum dolor sit amet ?",
+      answer:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua enim.",
+    },
+  ],
+}) => {
   const [activeQuestionIndex, setActiveQuestionIndex] = useState(null);
   const toggleQuestion = (questionIndex) => {
     if (activeQuestionIndex === questionIndex) setActiveQuestionIndex(null);
@@ -34,15 +55,16 @@ const Faq = ({ menus, faq, questions }) => {
     <Container id="faq">
       <FaqContainer>
         <Column>
-          <HeaderContent>
-            {menus.nodes.map((menu, i) => (
-              <Subheading key={i}>
-                {menu.menuItems.edges[2].node.label}
-              </Subheading>
-            ))}
-            <Heading>{faq.faq.faqHeading}</Heading>
-            <Description>{faq.faq.faqDescription}</Description>
-          </HeaderContent>
+          <HeadingContainer id="team">
+            <Subheading>
+              <HighlightedText>FAQ</HighlightedText>
+            </Subheading>
+            <HeadingTitle>Les réponses à vos questions</HeadingTitle>
+            <Description>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </Description>
+          </HeadingContainer>
           <QuestionsContainer>
             {questions.map((question, i) => (
               <FAQ
@@ -53,7 +75,7 @@ const Faq = ({ menus, faq, questions }) => {
                 className="group"
               >
                 <Question>
-                  <QuestionText> {question.node.title} </QuestionText>
+                  <QuestionText>{question.title}</QuestionText>
                   <QuestionToggleIcon
                     variants={{
                       collapsed: { rotate: 0 },
@@ -68,8 +90,8 @@ const Faq = ({ menus, faq, questions }) => {
                   >
                     <span>
                       <Image
-                        src={faq.faq.faqIcon.sourceUrl}
-                        alt={faq.faq.faqIcon.altText}
+                        src={ChevronDown}
+                        alt="Chevron down icon"
                         width={24}
                         height={24}
                       />
@@ -85,9 +107,7 @@ const Faq = ({ menus, faq, questions }) => {
                   animate={activeQuestionIndex === i ? "open" : "collapsed"}
                   transition={{ duration: 0.3, ease: [0.04, 0.62, 0.23, 0.98] }}
                 >
-                  <span
-                    dangerouslySetInnerHTML={{ __html: question.node.content }}
-                  />
+                  <span>{question.answer}</span>
                 </Answer>
               </FAQ>
             ))}

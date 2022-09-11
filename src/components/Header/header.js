@@ -1,6 +1,7 @@
 import React from "react";
 import tw from "twin.macro";
 import Image from "next/image";
+import Link from "next/link";
 import dynamic from "next/dynamic";
 import Nav from "../Nav/nav";
 import hero from "../../../public/hero.png";
@@ -11,7 +12,7 @@ const Countdown = dynamic(() => import("../Header/countdown"), {
 });
 
 const Hero = tw.div`relative`;
-const Container = tw.div`flex justify-between items-center max-w-screen-xl mx-auto`;
+const Container = tw.div`flex justify-between items-center max-w-screen-xl mx-auto  pb-20`;
 const TwoColumn = tw.div`flex flex-col lg:flex-row md:items-center max-w-screen-xl mx-auto pt-20`;
 const LeftColumn = tw.div`relative lg:w-6/12 lg:pr-12 flex-shrink-0 text-center lg:text-left`;
 const RightColumn = tw.div`relative mt-12 lg:mt-0 flex flex-col justify-center`;
@@ -43,9 +44,7 @@ const Header = () => {
                 eiusmod tempor incididunt ut labore et dolore magna aliqua.
               </Paragraph>
               <Actions>
-                <PrimaryButton as="a" href="/">
-                  RSVP
-                </PrimaryButton>
+                <PrimaryButton href="/">RSVP</PrimaryButton>
                 <SecondaryButton>
                   <Image
                     src={ChevronDown}
@@ -53,7 +52,9 @@ const Header = () => {
                     width={18}
                     height={18}
                   />
-                  <PlayText>C&#39; est parti</PlayText>
+                  <Link href="#programme">
+                    <PlayText>C&#39; est parti</PlayText>
+                  </Link>
                 </SecondaryButton>
               </Actions>
             </LeftColumn>
