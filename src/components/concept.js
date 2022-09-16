@@ -2,7 +2,6 @@ import React from "react";
 import tw from "twin.macro";
 import Image from "next/image";
 import Hotel from "../../public/kriunes.png";
-import { SectionDescription } from "../misc/Typography.js";
 
 const Container = tw.div`relative`;
 const TwoColumn = tw.div`flex flex-col md:flex-row justify-between max-w-screen-xl mx-auto py-20 md:py-24`;
@@ -14,30 +13,30 @@ const TextContent = tw.div`lg:py-8`;
 const HeadingTitle = tw.h5`text-4xl sm:text-5xl font-black tracking-wide text-center font-primary`;
 const Subheading = tw.h5`text-center mb-4 font-primary text-primary font-bold text-2xl`;
 const HighlightedText = tw.span`text-center`;
-const Description = tw(SectionDescription)`mx-auto text-center font-secondary`;
-
-const Statistics = tw.div`mt-6 lg:mt-8 xl:mt-16 flex flex-wrap`;
-const Statistic = tw.div`text-lg sm:text-2xl lg:text-3xl w-1/2 mt-4 lg:mt-10 text-center `;
+const Description = tw.p`mx-auto text-left font-secondary mt-4 text-xs md:text-sm lg:text-base font-medium leading-relaxed text-gray-600 max-w-xl`;
+const Link = tw.span`text-primary font-bold cursor-pointer hocus:underline`;
+const Statistics = tw.div`mt-3 lg:mt-4 xl:mt-8 flex flex-wrap`;
+const Statistic = tw.div`text-sm sm:text-lg lg:text-xl w-1/2 mt-4 lg:mt-4 text-center `;
 const Value = tw.div`font-secondary font-bold text-primary`;
 const Key = tw.div`font-primary font-medium text-gray-700`;
 
-const Lieu = ({
+const Concept = ({
   statistics = [
     {
-      key: "Countries",
-      value: "192",
+      key: "2 nuits à l'hôtel avec petit-déjeuner",
+      value: "L'Hébergement",
     },
     {
-      key: "Hotels",
-      value: "479",
+      key: "A l'exception du déjeuner du samedi",
+      value: "Les repas",
     },
     {
-      key: "Rooms",
-      value: "2093",
+      key: "Restaurant / bar",
+      value: "1",
     },
     {
-      key: "Workers",
-      value: "10347",
+      key: "300€ / adulte",
+      value: "Participation",
     },
   ],
 }) => {
@@ -56,12 +55,29 @@ const Lieu = ({
         <TextColumn>
           <TextContent>
             <Subheading>
-              <HighlightedText>Le Lieu</HighlightedText>
+              <HighlightedText>Le Concept</HighlightedText>
             </Subheading>
             <HeadingTitle>Hôtel Kríunes</HeadingTitle>
             <Description>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Il nous tient à coeur d&#39;organiser le mariage en Islande et de
+              vous faire découvrir ce pays et notre vie.
+              <br />
+              <br />
+              Nous privatisons pour le weekend l&#39;
+              <Link>
+                <a href="https://kriunes.is/" target="_blank" rel="noreferrer">
+                  hôtel Kríunes
+                </a>
+              </Link>{" "}
+              et tous les invités y seront acceuillis. L&#39;hôtel se situe à 15
+              minutes de Reykjavík, à côté de la{" "}
+              <b>réserve naturel de Heidmörk</b>, dispose d&#39;un <b>sauna</b>,{" "}
+              <b>bain chaud</b> et propose des <b>kayaks</b> pour aller sur le
+              lac.
+              <br />
+              <br />
+              Nous sollicitons votre aide pour une partie des frais et prenons
+              en charge le reste. <b>Ce qui est inclut :</b>
             </Description>
             <Statistics>
               {statistics.map((statistic, index) => (
@@ -77,4 +93,4 @@ const Lieu = ({
     </Container>
   );
 };
-export default Lieu;
+export default Concept;

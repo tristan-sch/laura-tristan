@@ -39,7 +39,7 @@ export const Nav = () => {
           <div>
             <DesktopLink>
               <Link href="#lieu" passHref>
-                <DesktopLinkItem>Lieu</DesktopLinkItem>
+                <DesktopLinkItem>Concept</DesktopLinkItem>
               </Link>
             </DesktopLink>
           </div>

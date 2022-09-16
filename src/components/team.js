@@ -142,8 +142,8 @@ const Team = ({
             Témoins, Demoiselles &amp; Garçons d&#39; honneur
           </HeadingTitle>
           <Description>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Ils sont là pour nous, ils sont là pour vous ! Voici l&#39;équipe de
+            choc qui nous aide à organiser cet heureux évèmement.
           </Description>
         </HeadingContainer>
         <Cards>

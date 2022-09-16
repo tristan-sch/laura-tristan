@@ -60,7 +60,7 @@ const MobileNav = () => {
           <div>
             <NavLinks>
               <Link href="#lieu" passHref>
-                <NavlinkItem onClick={onToggleNav}>Lieu</NavlinkItem>
+                <NavlinkItem onClick={onToggleNav}>Concept</NavlinkItem>
               </Link>
             </NavLinks>
           </div>

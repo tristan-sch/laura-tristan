@@ -66,33 +66,38 @@ const Programme = ({ steps }) => {
                 <Step>
                   <StepNumber>26 mai</StepNumber>
                   <StepText>
-                    <StepHeading>Heading</StepHeading>
+                    <StepHeading>
+                      Arrivée, installation à l&#39; hôtel et dîner
+                      d&#39;ouverture
+                    </StepHeading>
                     <StepDescription>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                      sed do eiusmod tempor incididunt ut labore et dolore magna
-                      aliqua enim.
+                      Nous vous accueillons en Islande ! Un premier dîner est
+                      prévu à <b>19h</b> à l&#39;hôtel avec tous les invités.
                     </StepDescription>
                   </StepText>
                 </Step>
                 <Step>
                   <StepNumber>27 mai</StepNumber>
                   <StepText>
-                    <StepHeading>Heading</StepHeading>
+                    <StepHeading>
+                      Cérémonie, vin d&#39;honneur &amp; Bal
+                    </StepHeading>
                     <StepDescription>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                      sed do eiusmod tempor incididunt ut labore et dolore magna
-                      aliqua enim.
+                      La matinée et le déjeuner sont libres. Une cérémonie
+                      laïque se tiendra à <b>14h</b> à l&#39;extérieur de
+                      l&#39;hôtel, suivi d&#39;un vin d&#39;honneur. Le dîner
+                      sera servi à <b>19h</b>, puis, nous ouvrirons le Bal.
                     </StepDescription>
                   </StepText>
                 </Step>
                 <Step>
                   <StepNumber>28 mai</StepNumber>
                   <StepText>
-                    <StepHeading>Heading</StepHeading>
+                    <StepHeading>Brunch &amp; fin</StepHeading>
                     <StepDescription>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                      sed do eiusmod tempor incididunt ut labore et dolore magna
-                      aliqua enim.
+                      Un brunch est prévu dans la matinée, l&#39;occasion de
+                      partager un dernier moment ensemble afin de clôturer ce
+                      weekend, car à midi, ce sera fini.
                     </StepDescription>
                   </StepText>
                 </Step>
