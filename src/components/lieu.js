@@ -53,7 +53,7 @@ const Lieu = ({
             <HeadingTitle>Hôtel Kríunes</HeadingTitle>
             <Description>
               Il nous tient à coeur d&#39;organiser le mariage en Islande. Afin
-              de faciliter l'organisation, nous privatisons l&#39;
+              de faciliter l&#39;organisation, nous privatisons l&#39;
               <Link>
                 <a href="https://kriunes.is/" target="_blank" rel="noreferrer">
                   hôtel Kríunes
