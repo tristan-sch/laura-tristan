@@ -35,8 +35,8 @@ const Contact = () => {
         <Subheading>Contact</Subheading>
         <HeadingTitle>Contactez-nous</HeadingTitle>
         <Description>
-          Nous sommes à votre dispostion, n'hésitez pas à prendre contact avec
-          nous. Nous avons hâte de vous accueullir en Islande !
+          Nous sommes à votre dispostion, n&#39;hésitez pas à prendre contact
+          avec nous. Nous avons hâte de vous accueullir en Islande !
         </Description>
         <ThreeColumnContainer>
           <Column>
