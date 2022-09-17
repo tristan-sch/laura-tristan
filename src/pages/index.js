@@ -1,7 +1,7 @@
 import Head from "next/head";
 import Header from "../components/Header/header";
 import Programme from "../components/programme";
-import Concept from "../components/concept";
+import Lieu from "../components/lieu";
 import Team from "../components/team";
 import Faq from "../components/faq";
 import Contact from "../components/contact";
@@ -16,7 +16,7 @@ const Home = () => {
       </Head>
       <Header />
       <Programme />
-      <Concept />
+      <Lieu />
       <Team />
       <Faq />
       <Contact />

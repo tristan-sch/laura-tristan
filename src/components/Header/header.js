@@ -40,12 +40,18 @@ const Header = () => {
                 <HighlightedText>Laura &amp; Tristan</HighlightedText>
               </Heading>
               <Paragraph>
-                Nous célébrons notre mariage le weekend le <b>27 mai 2023</b>.
+                Nous célébrons notre mariage le weekend du <b>27 mai 2023</b>.
                 Un hôtel sera privatisé du vendredi au dimanche. Vous trouverez
                 sur ce site toutes les informations pratiques.
               </Paragraph>
               <Actions>
-                <PrimaryButton href="/">RSVP</PrimaryButton>
+                <a
+                  href="https://docs.google.com/forms/d/e/1FAIpQLScv-2HooO284Hh8M0sPOhduniz9hg4_kwxmcdk7FVxeKP4hHg/formResponse"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <PrimaryButton>RSVP</PrimaryButton>
+                </a>
                 <SecondaryButton>
                   <Image
                     src={ChevronDown}

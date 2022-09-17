@@ -8,8 +8,8 @@ import MobileNav from "./mobileNav";
 const NavWrapper = tw.div`flex justify-between pt-10 px-10 sm:pr-0 sm:pt-16`;
 const BrandWrapper = tw.div`flex items-center justify-between text-gray-900 font-primary`;
 const Logo = tw.div`mr-3 z-20`;
-const Title = tw.div`hidden text-gray-900 h-6 text-lg font-semibold lg:block`;
-const DesktoplinksWrapper = tw.div`flex items-center text-lg leading-5`;
+const Title = tw.div`hidden text-gray-900 h-6 text-xl font-semibold lg:block`;
+const DesktoplinksWrapper = tw.div`flex items-center text-xl leading-5`;
 const DesktoplinksWrapperUnder = tw.div`flex`;
 const DesktopLink = tw.div`relative hidden sm:block`;
 const DesktopLinkItem = tw.div`border-b-2 border-transparent hocus:text-primary hocus:border-primary pb-1 transition duration-300 p-1 font-medium text-gray-900 lg:p-6 sm:p-4 font-primary cursor-pointer`;
@@ -39,7 +39,7 @@ export const Nav = () => {
           <div>
             <DesktopLink>
               <Link href="#lieu" passHref>
-                <DesktopLinkItem>Concept</DesktopLinkItem>
+                <DesktopLinkItem>Le Lieu</DesktopLinkItem>
               </Link>
             </DesktopLink>
           </div>

@@ -24,24 +24,41 @@ const Answer = motion(
 const Faq = ({
   questions = [
     {
-      title: "Lorem ipsum dolor sit amet ?",
+      title:
+        "Quelle est la date limite pour confirmer sa venue et comment le faire ?",
       answer:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua enim.",
+        "Un lien RSVP est présent en haut de site, nous vous prions de cliquer dessus et de remplir le formulaire en ligne. Si vous pouviez nous donner une réponse définitive avant Noël, ce serait parfait.",
     },
     {
-      title: "Lorem ipsum dolor sit amet ?",
+      title:
+        "Qu'est ce qui est inclus dans les 300€ de participation et y-a-t-il une réduction pour les enfants ?",
       answer:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua enim.",
+        "La participation est de 300€ par adulte (150€ par enfant) et inclut deux nuits en chambre double (vendredi et samedi), le dîner (boissons incluses) du vendredi soir, les petit-déjeuners (samedi et dimanche). La journée du samedi avec le vin d'honneur, le dîner de mariage et le Bal sera prise en charge par nos soins.",
     },
     {
-      title: "Lorem ipsum dolor sit amet ?",
+      title: "Comment se rendre en Islande ?",
       answer:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua enim.",
+        "Trois compagnies aériennes proposent des vols vers Keflavík (cf. liens utiles en bas de site) : Icelandair (depuis Paris CDG et Francfort), Transavia (depuis Paris Orly et Nantes), PLAY (depuis CDG). L'aéroport international de Keflavík se situe à 40 minutes de l'hotel Kríunes.",
     },
     {
-      title: "Lorem ipsum dolor sit amet ?",
+      title: "Si je veux voyager en Islande, avant ou après le mariage ?",
       answer:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua enim.",
+        "L'hôtel Krínues propose un tarif réduit pour avancer et/ou prolonger le séjour, demandez-nous ou indiquez-le dans le formulaire RSVP. Si vous souhaitez voyager en dehors de Reykjavík, nous  intégrerons prochainement sur les site des idées de circuit et activités.",
+    },
+    {
+      title: "Comment s'habiller pour le mariage ?",
+      answer:
+        "Si des vêtements chauds et imperméables sont de rigueur en Islande, cet évènement reste un mariage, doudoune et bonnet interdits !",
+    },
+    {
+      title: "Et le cadeau de mariage ?",
+      answer:
+        "Notre plus beau cadeau sera votre venue, nous ne voulons rien d'autre que votre présence.",
+    },
+    {
+      title: "Encore une question ?",
+      answer:
+        "Contactez-nous ! Si vous n'avez pas notre numéro de téléphone, vous trouverez nos adresses mails un peu plus bas.",
     },
   ],
 }) => {
@@ -61,8 +78,8 @@ const Faq = ({
             </Subheading>
             <HeadingTitle>Les réponses à vos questions</HeadingTitle>
             <Description>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Voici des informations utiles sur le mariage, son déroulement et
+              les questions que vous pourriez-vous poser.
             </Description>
           </HeadingContainer>
           <QuestionsContainer>

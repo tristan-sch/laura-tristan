@@ -15,34 +15,15 @@ const TextColumn = tw.div`md:w-full lg:w-6/12 mt-16 md:mt-0 md:ml-12 lg:ml-16 md
 const HeadingTitle = tw.h5`text-4xl sm:text-5xl font-black tracking-wide text-center font-primary`;
 const Subheading = tw.h5`text-center mb-4 font-primary text-primary font-bold  text-2xl`;
 const HighlightedText = tw.span`text-center`;
-const TextContent = tw.div`lg:py-8 text-center md:text-left`;
+const TextContent = tw.div`lg:py-8 text-center lg:text-left`;
 const Steps = tw.ul`mt-12`;
 const Step = tw.li`mt-8 flex flex-col lg:flex-row items-center lg:items-start`;
 const StepNumber = tw.div`font-primary font-semibold text-2xl leading-none text-gray-500`;
-const StepText = tw.div`font-secondary mt-3 md:mt-0 md:ml-6`;
+const StepText = tw.div`font-secondary mt-3 lg:mt-0 md:ml-6`;
 const StepHeading = tw.h6`font-primary leading-none text-2xl font-semibold`;
-const StepDescription = tw.p`font-secondary mt-3 max-w-lg leading-loose text-sm text-gray-600 font-medium`;
+const StepDescription = tw.p`font-secondary mt-3 max-w-lg leading-loose text-sm md:text-base text-gray-600 font-medium`;
 
-const Programme = ({ steps }) => {
-  const defaultSteps = [
-    {
-      heading: "Register",
-      description: "Create an account with us using Google or Facebook.",
-    },
-    {
-      heading: "Download",
-      description:
-        "Browse and Download the template that you like from the marketplace.",
-    },
-    {
-      heading: "Run",
-      description:
-        "Follow the instructions to setup and customize the template to your needs.",
-    },
-  ];
-
-  if (!steps) steps = defaultSteps;
-
+const Programme = () => {
   return (
     <ProgrammeContainerWrapper>
       <Container id="programme">
@@ -67,12 +48,12 @@ const Programme = ({ steps }) => {
                   <StepNumber>26 mai</StepNumber>
                   <StepText>
                     <StepHeading>
-                      Arrivée, installation à l&#39; hôtel et dîner
+                      Arrivée, installation à l&#39;hôtel et dîner
                       d&#39;ouverture
                     </StepHeading>
                     <StepDescription>
                       Nous vous accueillons en Islande ! Un premier dîner est
-                      prévu à <b>19h</b> à l&#39;hôtel avec tous les invités.
+                      prévu à <b>19h</b> à l&#39;hôtel avec les invités.
                     </StepDescription>
                   </StepText>
                 </Step>
@@ -83,10 +64,10 @@ const Programme = ({ steps }) => {
                       Cérémonie, vin d&#39;honneur &amp; Bal
                     </StepHeading>
                     <StepDescription>
-                      La matinée et le déjeuner sont libres. Une cérémonie
-                      laïque se tiendra à <b>14h</b> à l&#39;extérieur de
-                      l&#39;hôtel, suivi d&#39;un vin d&#39;honneur. Le dîner
-                      sera servi à <b>19h</b>, puis, nous ouvrirons le Bal.
+                      La matinée et le déjeuner seront libres. Une cérémonie
+                      laïque se tiendra vers <b>14h</b> à l&#39;hôtel, suivi
+                      d&#39;un vin d&#39;honneur. Le dîner sera servi à{" "}
+                      <b>19h</b>, puis, nous ouvrirons le Bal.
                     </StepDescription>
                   </StepText>
                 </Step>
@@ -97,7 +78,7 @@ const Programme = ({ steps }) => {
                     <StepDescription>
                       Un brunch est prévu dans la matinée, l&#39;occasion de
                       partager un dernier moment ensemble afin de clôturer ce
-                      weekend, car à midi, ce sera fini.
+                      weekend.
                     </StepDescription>
                   </StepText>
                 </Step>

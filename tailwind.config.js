@@ -246,7 +246,9 @@ module.exports = {
     },
     fontFamily: {
       primary: ['"Dancing Script"', "sans-serif"],
-      secondary: ['"Open Sans"', "sans-serif"],
+      // secondary: ['"Open Sans"', "sans-serif"],
+      // secondary: ['"Lato"', "sans-serif"],
+      secondary: ['"Josefin Sans"', "sans-serif"],
     },
     fontSize: {
       xs: "0.75rem",

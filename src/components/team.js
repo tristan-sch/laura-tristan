@@ -139,7 +139,7 @@ const Team = ({
             <HighlightedText>La Dream Team</HighlightedText>
           </Subheading>
           <HeadingTitle>
-            Témoins, Demoiselles &amp; Garçons d&#39; honneur
+            Témoins, Demoiselles &amp; Garçons d&#39;honneur
           </HeadingTitle>
           <Description>
             Ils sont là pour nous, ils sont là pour vous ! Voici l&#39;équipe de

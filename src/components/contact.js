@@ -35,12 +35,16 @@ const Contact = () => {
         <Subheading>Contact</Subheading>
         <HeadingTitle>Contactez-nous</HeadingTitle>
         <Description>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua enim.
+          Nous sommes à votre dispostion, n'hésitez pas à prendre contact avec
+          nous. Nous avons hâte de vous accueullir en Islande !
         </Description>
         <ThreeColumnContainer>
           <Column>
-            <Card href="https://goo.gl/maps/6oEP4vgHNPU3o3FF8" target="_blank">
+            <Card
+              href="https://goo.gl/maps/6oEP4vgHNPU3o3FF8"
+              target="_blank"
+              rel="noopener"
+            >
               <ImageContainer>
                 <Image
                   width={24}
@@ -59,19 +63,14 @@ const Contact = () => {
             </Card>
           </Column>
           <Column>
-            <Card href="tel:+3548889804">
+            <Card href="mailto:schild.laura@hotmail.fr">
               <ImageContainer>
-                <Image
-                  width={24}
-                  height={24}
-                  alt="Phone Icon"
-                  src={PhoneIcon}
-                />
+                <Image width={24} height={24} alt="Email Icon" src={MailIcon} />
               </ImageContainer>
-              <Title>Téléphone</Title>
-              <SubDescription>+354 888 9804</SubDescription>
+              <Title>Laura</Title>
+              <SubDescription>schild.laura[at]hotmail.fr</SubDescription>
               <DescriptionLink>
-                <span>Appelez-nous</span>
+                <span>Écrivez-moi</span>
               </DescriptionLink>
             </Card>
           </Column>
@@ -80,10 +79,10 @@ const Contact = () => {
               <ImageContainer>
                 <Image width={24} height={24} alt="Email Icon" src={MailIcon} />
               </ImageContainer>
-              <Title>Email</Title>
-              <SubDescription>schmale.tristan@gmail.com</SubDescription>
+              <Title>Tristan</Title>
+              <SubDescription>schmale.tristan[at]gmail.com</SubDescription>
               <DescriptionLink>
-                <span>Écrivez-nous</span>
+                <span>Écrivez-moi</span>
               </DescriptionLink>
             </Card>
           </Column>
@@ -95,48 +94,64 @@ const Contact = () => {
             <LinkList>
               <ColumnHeading>Menu</ColumnHeading>
               <div>
-                <Link href="#" passHref>
-                  <LinkListItem>Label</LinkListItem>
+                <Link href="#programme" passHref>
+                  <LinkListItem>Programme</LinkListItem>
                 </Link>
               </div>
               <div>
-                <Link href="#" passHref>
-                  <LinkListItem>Label</LinkListItem>
+                <Link href="#lieu" passHref>
+                  <LinkListItem>Le Lieu</LinkListItem>
                 </Link>
               </div>
               <div>
-                <Link href="#" passHref>
-                  <LinkListItem>Label</LinkListItem>
+                <Link href="#team" passHref>
+                  <LinkListItem>Dream Team</LinkListItem>
                 </Link>
               </div>
               <div>
-                <Link href="#" passHref>
-                  <LinkListItem>Label</LinkListItem>
+                <Link href="#faq" passHref>
+                  <LinkListItem>FAQ</LinkListItem>
                 </Link>
               </div>
             </LinkList>
           </ColumnFooter>
           <ColumnFooter>
             <LinkList>
-              <ColumnHeading>Useful links</ColumnHeading>
+              <ColumnHeading>Liens utiles</ColumnHeading>
               <LinkListItem>
-                <Link href="#" target="_blank">
-                  Useful Link
+                <Link
+                  href="https://www.icelandair.com/fr-fr/"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  Icelandair
                 </Link>
               </LinkListItem>
               <LinkListItem>
-                <Link href="#" target="_blank">
-                  Useful Link
+                <Link
+                  href="https://www.transavia.com/fr-FR/accueil/"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  Transavia (low cost)
                 </Link>
               </LinkListItem>
               <LinkListItem>
-                <Link href="#" target="_blank">
-                  Useful Link
+                <Link
+                  href="https://www.flyplay.com/fr"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  PLAY (low cost)
                 </Link>
               </LinkListItem>
               <LinkListItem>
-                <Link href="#" target="_blank">
-                  Useful Link
+                <Link
+                  href="https://www.visiticeland.com/"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  Visit Iceland
                 </Link>
               </LinkListItem>
             </LinkList>
