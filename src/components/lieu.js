@@ -13,11 +13,10 @@ const TextContent = tw.div`lg:py-8`;
 const HeadingTitle = tw.h5`text-4xl sm:text-5xl font-black tracking-wide text-center font-primary`;
 const Subheading = tw.h5`text-center mb-4 font-primary text-primary font-bold text-2xl`;
 const HighlightedText = tw.span`text-center`;
-const Description = tw.p`mx-auto text-center font-secondary my-4 text-sm md:text-lg lg:text-xl font-medium leading-relaxed text-gray-600 max-w-xl`;
+const Description = tw.p`mx-auto text-center font-secondary my-4 text-sm md:text-lg lg:text-lg leading-relaxed text-gray-600 max-w-xl`;
 const Link = tw.span`text-primary font-bold cursor-pointer hocus:underline`;
-const Statistics = tw.div`mt-3 sm:my-8 flex flex-wrap text-center`;
-// const Statistic = tw.div`text-sm sm:text-lg lg:text-xl w-1/2 mt-4 lg:mt-4 text-center `;
-const Statistic = tw.div`text-sm sm:text-lg lg:text-xl w-1/2 my-3`;
+const Statistics = tw.div`text-center mt-3 sm:my-8 flex flex-col items-center md:flex-row`;
+const Statistic = tw.div`text-sm sm:text-lg lg:text-xl w-1/2 my-4`;
 const Value = tw.div`font-secondary font-bold text-primary`;
 const Key = tw.div`font-primary font-medium text-gray-700`;
 
@@ -25,11 +24,11 @@ const Lieu = ({
   statistics = [
     {
       key: "2 nuits avec petit-déjeuner",
-      value: "L'hébergement",
+      value: "L'hébergement à l'hôtel",
     },
     {
-      key: "Sauf le déjeuner du samedi",
-      value: "Les repas",
+      key: "du vendredi soir, boissons incluses",
+      value: "Le dîner 3 plats",
     },
   ],
 }) => {
@@ -59,8 +58,11 @@ const Lieu = ({
                   hôtel Kríunes
                 </a>
               </Link>{" "}
-              pour le weekend et vous demandons une participation de <b>300€</b>{" "}
-              par adulte <b>incluant :</b>
+              pour le weekend. <br /> La journée du samedi avec le{" "}
+              <b>vin d&#39;honneur</b>, le <b>dîner de mariage</b> et le{" "}
+              <b>Bal</b> sera prise en charge par nos soins et nous vous
+              demandons une participation de <b>300</b>€ par adulte{" "}
+              <b>incluant :</b>
             </Description>
             <Statistics>
               {statistics.map((statistic, index) => (
