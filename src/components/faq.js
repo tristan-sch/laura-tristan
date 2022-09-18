@@ -43,7 +43,7 @@ const Faq = ({
     {
       title: "Si je veux voyager en Islande, avant ou après le mariage ?",
       answer:
-        "L'hôtel Krínues propose un tarif réduit pour avancer et/ou prolonger le séjour, demandez-nous ou indiquez-le dans le formulaire RSVP. Si vous souhaitez voyager en dehors de Reykjavík, nous  intégrerons prochainement sur les site des idées de circuit et activités.",
+        "L'hôtel Kríunes propose un tarif réduit pour avancer et/ou prolonger le séjour, demandez-nous ou indiquez-le dans le formulaire RSVP. Si vous souhaitez voyager en dehors de Reykjavík, nous  intégrerons prochainement sur les site des idées de circuit et activités.",
     },
     {
       title: "Comment s'habiller pour le mariage ?",
