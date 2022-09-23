@@ -65,9 +65,9 @@ const Programme = () => {
                     </StepHeading>
                     <StepDescription>
                       La matinée et le déjeuner seront libres. Une cérémonie
-                      laïque se tiendra vers <b>14h</b> à l&#39;hôtel, suivi
-                      d&#39;un vin d&#39;honneur. Le dîner sera servi à{" "}
-                      <b>19h</b>, puis, nous ouvrirons le Bal.
+                      laïque se tiendra dans d'après-midi à l&#39;hôtel, suivi
+                      d&#39;un vin d&#39;honneur. Le dîner débutera en début de
+                      soirée, puis, nous ouvrirons le Bal.
                     </StepDescription>
                   </StepText>
                 </Step>
@@ -76,9 +76,8 @@ const Programme = () => {
                   <StepText>
                     <StepHeading>Petit-déjeuner &amp; fin</StepHeading>
                     <StepDescription>
-                      Un brunch est prévu dans la matinée, l&#39;occasion de
-                      partager un dernier moment ensemble afin de clôturer ce
-                      weekend.
+                      Le petit-déjeuner sera l&#39;occasion de partager un
+                      dernier moment ensemble afin de clôturer ce weekend.
                     </StepDescription>
                   </StepText>
                 </Step>
