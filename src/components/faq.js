@@ -38,7 +38,7 @@ const Faq = ({
     {
       title: "Comment se rendre en Islande ?",
       answer:
-        "Trois compagnies aériennes proposent des vols vers Keflavík (cf. liens utiles en bas de site) : Icelandair (depuis Paris CDG et Francfort), Transavia (depuis Paris Orly et Nantes), PLAY (depuis CDG). L'aéroport international de Keflavík se situe à 40 minutes de l'hotel Kríunes.",
+        "Trois compagnies aériennes proposent des vols vers Keflavík (cf. liens utiles en bas de site) : Icelandair (depuis Paris CDG et Francfort), Transavia (depuis Paris Orly et Nantes), PLAY (depuis CDG). A noter que Transavia n'a pas encore ouvert ses vols. L'aéroport international de Keflavík se situe à 40 minutes de l'hotel Kríunes.",
     },
     {
       title: "Si je veux voyager en Islande, avant ou après le mariage ?",
