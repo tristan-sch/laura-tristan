@@ -74,7 +74,7 @@ const Programme = () => {
                 <Step>
                   <StepNumber>28 mai</StepNumber>
                   <StepText>
-                    <StepHeading>Brunch &amp; fin</StepHeading>
+                    <StepHeading>Petit-déjeuner &amp; fin</StepHeading>
                     <StepDescription>
                       Un brunch est prévu dans la matinée, l&#39;occasion de
                       partager un dernier moment ensemble afin de clôturer ce
