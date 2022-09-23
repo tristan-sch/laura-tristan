@@ -17,7 +17,6 @@ module.exports = {
       white: "#fff",
 
       primary: "#399B92",
-      // primary: "#386B9B",
       secondary: "#386B9B",
       tertiary: "#FFECCC",
 
