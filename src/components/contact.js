@@ -36,7 +36,7 @@ const Contact = () => {
         <HeadingTitle>Contactez-nous</HeadingTitle>
         <Description>
           Nous sommes à votre dispostion, n&#39;hésitez pas à prendre contact
-          avec nous. Nous avons hâte de vous accueullir en Islande !
+          avec nous. Nous avons hâte de vous accueillir en Islande !
         </Description>
         <ThreeColumnContainer>
           <Column>

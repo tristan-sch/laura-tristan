@@ -16,7 +16,9 @@ const QuestionsContainer = tw.dl`mt-12 max-w-4xl relative`;
 const FAQ = tw.div`cursor-pointer select-none mt-5 px-8 sm:px-10 py-5 sm:py-4 rounded-lg text-gray-800 hover:text-gray-900 bg-gray-200 hover:bg-gray-300 transition duration-300`;
 const Question = tw.dt`flex justify-between items-center`;
 const QuestionText = tw.span`text-lg lg:text-xl font-semibold font-primary`;
-const QuestionToggleIcon = motion(tw.span`ml-2 transition duration-300`);
+const QuestionToggleIcon = motion(
+  tw.span`ml-2 transition duration-300 flex-shrink-0`
+);
 const Answer = motion(
   tw.dd`pointer-events-none text-sm sm:text-base leading-relaxed font-secondary`
 );
