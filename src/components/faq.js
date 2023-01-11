@@ -29,18 +29,18 @@ const Faq = ({
       title:
         "Quelle est la date limite pour confirmer sa venue et comment le faire ?",
       answer:
-        "Un lien RSVP est présent en haut de site, nous vous prions de cliquer dessus et de remplir le formulaire en ligne. Si vous pouviez nous donner une réponse définitive avant Noël, ce serait parfait.",
+        "Un lien RSVP est présent en haut de site, nous vous prions de cliquer dessus et de remplir le formulaire en ligne dès que possible, les vols étant déjà disponibles.",
     },
     {
       title:
-        "Qu'est ce qui est inclus dans les 300€ de participation et y-a-t-il une réduction pour les enfants ?",
+        "Qu'est ce qui est inclus dans les 200€ de participation et y-a-t-il une réduction pour les enfants ?",
       answer:
-        "La participation est de 300€ par adulte (150€ par enfant) et inclut deux nuits en chambre double (vendredi et samedi), le dîner (boissons incluses) du vendredi soir, les petit-déjeuners (samedi et dimanche). La journée du samedi avec le vin d'honneur, le dîner de mariage et le Bal sera prise en charge par nos soins.",
+        "La participation est de 200€ par adulte (50€ par enfant) et inclut deux nuits en chambre double (vendredi et samedi), le dîner (boissons incluses) du vendredi soir, les petit-déjeuners (samedi et dimanche). La journée du samedi avec le vin d'honneur, le dîner de mariage et le Bal sera prise en charge par nos soins.",
     },
     {
       title: "Comment se rendre en Islande ?",
       answer:
-        "Trois compagnies aériennes proposent des vols vers Keflavík (cf. liens utiles en bas de site) : Icelandair (depuis Paris CDG et Francfort), Transavia (depuis Paris Orly et Nantes), PLAY (depuis CDG). A noter que Transavia n'a pas encore ouvert ses vols. L'aéroport international de Keflavík se situe à 40 minutes de l'hotel Kríunes.",
+        "Trois compagnies aériennes proposent des vols vers Keflavík (cf. liens utiles en bas de site) : Icelandair (depuis Paris CDG et Francfort), Transavia (depuis Paris Orly), PLAY (depuis CDG). L'aéroport international de Keflavík se situe à 40 minutes de l'hotel Kríunes.",
     },
     {
       title: "Si je veux voyager en Islande, avant ou après le mariage ?",
