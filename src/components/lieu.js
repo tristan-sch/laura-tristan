@@ -74,7 +74,7 @@ const Lieu = ({
             </Statistics>{" "}
             <Description>
               L&#39;hôtel Kríunes se situe à 15 minutes de Reykjavík, à côté de
-              la <b>réserve naturel de Heiðmörk</b>, dispose d&#39;un{" "}
+              la <b>réserve naturelle de Heiðmörk</b>, dispose d&#39;un{" "}
               <b>sauna</b>, <b>bain chaud</b> et propose des <b>kayaks</b> pour
               aller sur le lac.
             </Description>
