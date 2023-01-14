@@ -33,9 +33,9 @@ const Faq = ({
     },
     {
       title:
-        "Qu'est ce qui est inclus dans les 250€ de participation et y-a-t-il une réduction pour les enfants ?",
+        "Qu'est ce qui est inclus dans les 275€ de participation et y-a-t-il une réduction pour les enfants ?",
       answer:
-        "La participation est de 250€ par adulte (50€ par enfant) et inclut deux nuits en chambre double (vendredi et samedi), le dîner (boissons incluses) du vendredi soir, les petit-déjeuners (samedi et dimanche). La journée du samedi avec le vin d'honneur, le dîner de mariage et le Bal sera prise en charge par nos soins.",
+        "La participation est de 275€ par adulte (40€ par enfant) et inclut deux nuits en chambre double (vendredi et samedi), le dîner (boissons incluses) du vendredi soir, les petit-déjeuners (samedi et dimanche). La journée du samedi avec le vin d'honneur, le dîner de mariage et le Bal sera prise en charge par nos soins.",
     },
     {
       title: "Comment se rendre en Islande ?",
