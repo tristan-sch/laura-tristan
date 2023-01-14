@@ -61,7 +61,7 @@ const Lieu = ({
               pour le weekend. <br /> La journée du samedi avec le{" "}
               <b>vin d&#39;honneur</b>, le <b>dîner de mariage</b> et le{" "}
               <b>Bal</b> sera prise en charge par nos soins et nous vous
-              demandons une participation de <b>250</b>€ par adulte{" "}
+              demandons une participation de <b>275</b>€ par adulte{" "}
               <b>incluant :</b>
             </Description>
             <Statistics>
