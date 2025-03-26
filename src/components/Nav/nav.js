@@ -2,7 +2,7 @@ import React from "react";
 import tw from "twin.macro";
 import Link from "next/link";
 import Image from "next/image";
-import logo from "../../../public/logo.png";
+import logo from "../../../public/optimized-images/logo.png";
 import MobileNav from "./mobileNav";
 
 const NavWrapper = tw.div`flex justify-between pt-10 px-10 sm:pr-0 sm:pt-16`;
@@ -21,7 +21,14 @@ export const Nav = () => {
         <Link href="/" aria-label="aria label">
           <BrandWrapper>
             <Logo className="logo">
-              <Image src={logo} alt="Logo" width={100} height={100} />
+              <Image
+                src={logo}
+                alt="Logo"
+                width={100}
+                height={100}
+                loading="lazy"
+                unoptimized={true}
+              />
             </Logo>
             <Title>Mariage de Laura &amp; Tristan</Title>
           </BrandWrapper>

@@ -2,7 +2,7 @@ import React from "react";
 import tw from "twin.macro";
 import Image from "next/image";
 import Link from "next/link";
-import backgroundImage from "../../public/404.png";
+import backgroundImage from "../../public/optimized-images/404.png";
 
 const Container = tw.div`relative -mt-8 bg-center bg-cover h-screen min-h-144`;
 const PrimaryAction = tw.button`rounded-lg px-8 py-3 mt-10 text-sm sm:text-base sm:mt-16 sm:px-8 sm:py-4 bg-gray-100 font-bold shadow transition duration-300 bg-primary text-gray-100 hocus:bg-gray-100 hocus:text-gray-900 focus:outline-none focus:shadow-outline`;
@@ -19,6 +19,7 @@ const FourOhFour = () => {
         layout="fill"
         objectFit="cover"
         priority="true"
+        unoptimized={true}
       />
       <HeroContainer>
         <Content>

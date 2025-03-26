@@ -113,6 +113,8 @@ const Faq = ({
                         alt="Chevron down icon"
                         width={24}
                         height={24}
+                        loading="lazy"
+                        unoptimized={true}
                       />
                     </span>
                   </QuestionToggleIcon>

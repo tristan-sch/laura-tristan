@@ -3,7 +3,7 @@ import tw from "twin.macro";
 import Image from "next/image";
 import MailIcon from "../../public/mail.svg";
 import PhoneIcon from "../../public/phone.svg";
-import logo from "../../public/logo.png";
+import logo from "../../public/optimized-images/logo.png";
 import LocationIcon from "../../public/map-pin.svg";
 import { SectionDescription } from "../misc/Typography.js";
 import { Container, ContactContainer } from "../misc/Layouts.js";
@@ -51,6 +51,8 @@ const Contact = () => {
                   height={24}
                   alt="Map-pin icon"
                   src={LocationIcon}
+                  loading="lazy"
+                  unoptimized={true}
                 />
               </ImageContainer>
               <Title>Le lieu</Title>
@@ -65,7 +67,14 @@ const Contact = () => {
           <Column>
             <Card href="mailto:schild.laura@hotmail.fr">
               <ImageContainer>
-                <Image width={24} height={24} alt="Email Icon" src={MailIcon} />
+                <Image
+                  width={24}
+                  height={24}
+                  alt="Email Icon"
+                  src={MailIcon}
+                  loading="lazy"
+                  unoptimized={true}
+                />
               </ImageContainer>
               <Title>Laura</Title>
               <SubDescription>schild.laura[at]hotmail.fr</SubDescription>
@@ -77,7 +86,14 @@ const Contact = () => {
           <Column>
             <Card href="mailto:schmale.tristan@gmail.com">
               <ImageContainer>
-                <Image width={24} height={24} alt="Email Icon" src={MailIcon} />
+                <Image
+                  width={24}
+                  height={24}
+                  alt="Email Icon"
+                  src={MailIcon}
+                  loading="lazy"
+                  unoptimized={true}
+                />
               </ImageContainer>
               <Title>Tristan</Title>
               <SubDescription>schmale.tristan[at]gmail.com</SubDescription>
@@ -159,7 +175,14 @@ const Contact = () => {
           <ColumnFooter>
             <LogoContainer>
               <Link href="#">
-                <Image width={150} height={150} alt="" src={logo} />
+                <Image
+                  width={150}
+                  height={150}
+                  alt=""
+                  src={logo}
+                  loading="lazy"
+                  unoptimized={true}
+                />
               </Link>
             </LogoContainer>
           </ColumnFooter>

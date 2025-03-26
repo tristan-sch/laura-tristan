@@ -1,7 +1,7 @@
 import React from "react";
 import tw from "twin.macro";
 import Image from "next/image";
-import Hotel from "../../public/kriunes.png";
+import Hotel from "../../public/optimized-images/kriunes.png";
 
 const Container = tw.div`relative`;
 const TwoColumn = tw.div`flex flex-col lg:flex-row justify-between max-w-screen-xl mx-auto py-20 md:py-24`;
@@ -42,6 +42,8 @@ const Lieu = ({
             alt="Hotel pohoto"
             width={533}
             height={641}
+            loading="lazy"
+            unoptimized={true}
           />
         </ImageColumn>
         <TextColumn>
