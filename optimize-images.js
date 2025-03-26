@@ -2,8 +2,8 @@ const sharp = require("sharp");
 const fs = require("fs");
 const path = require("path");
 
-const inputDir = "public/images";
-const outputDir = "public/images";
+const inputDir = "public";
+const outputDir = "public/optimized-images";
 
 const optimizeImage = async (file) => {
   const inputFilePath = path.join(inputDir, file);

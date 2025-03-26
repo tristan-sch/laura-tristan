@@ -4,19 +4,19 @@ import Image from "next/image";
 import tw, { styled, css } from "twin.macro";
 import { TeamContainerWrapper, TeamContainer } from "../misc/Layouts.js";
 import { SectionDescription } from "../misc/Typography.js";
-import ChevronDown from "../../public/chevronDown.svg";
-import Florian from "../../public/Florian.jpg";
-import Karsten from "../../public/Karsten.jpg";
-import Laetitia from "../../public/Laetitia.jpg";
-import Raphael from "../../public/Raphael.jpg";
-import Antonin from "../../public/Antonin.jpg";
-import Camille from "../../public/Camille.jpg";
-import Davy from "../../public/Davy.jpg";
-import Margaux from "../../public/Margaux.jpg";
-import Aurel from "../../public/Aurel.jpg";
-import Laurie from "../../public/Laurie.jpg";
-import Guillaume from "../../public/Guillaume.jpg";
-import Lea from "../../public/Lea.jpg";
+import ChevronDown from "../../public/optimized-images/chevronDown.svg";
+import Florian from "../../public/optimized-images/Florian.jpg";
+import Karsten from "../../public/optimized-images/Karsten.jpg";
+import Laetitia from "../../public/optimized-images/Laetitia.jpg";
+import Raphael from "../../public/optimized-images/Raphael.jpg";
+import Antonin from "../../public/optimized-images/Antonin.jpg";
+import Camille from "../../public/optimized-images/Camille.jpg";
+import Davy from "../../public/optimized-images/Davy.jpg";
+import Margaux from "../../public/optimized-images/Margaux.jpg";
+import Aurel from "../../public/optimized-images/Aurel.jpg";
+import Laurie from "../../public/optimized-images/Laurie.jpg";
+import Guillaume from "../../public/optimized-images/Guillaume.jpg";
+import Lea from "../../public/optimized-images/Lea.jpg";
 
 const HeadingContainer = tw.div``;
 const HeadingTitle = tw.h5`text-4xl sm:text-5xl font-black tracking-wide text-center font-primary`;
@@ -153,10 +153,10 @@ const Team = ({
                 css={[tw`rounded-full`]}
                 src={staff.imageSrc}
                 alt="Team member photo"
+                width={160}
+                height={160}
                 loading="lazy"
                 unoptimized={true}
-                // width={160}
-                // height={160}
               />
               <CardContent>
                 <SliderPosition css={styles[staff.color]}>
@@ -176,20 +176,20 @@ const Team = ({
                 <Image
                   src={ChevronDown}
                   alt="Previous button icon"
+                  width={24}
+                  height={24}
                   loading="lazy"
                   unoptimized={true}
-                  // width={24}
-                  // height={24}
                 />
               </PrevButton>
               <NextButton onClick={sliderRef?.slickNext}>
                 <Image
                   src={ChevronDown}
                   alt="Next button icon"
+                  width={24}
+                  height={24}
                   loading="lazy"
                   unoptimized={true}
-                  // width={24}
-                  // height={24}
                 />
               </NextButton>
             </Controls>
@@ -202,10 +202,10 @@ const Team = ({
                     css={[tw`rounded-full`]}
                     src={staff.imageSrc}
                     alt="Team member photo"
+                    width={160}
+                    height={160}
                     loading="lazy"
                     unoptimized={true}
-                    // width={160}
-                    // height={160}
                   />
                   <SliderPosition css={styles[staff.color]}>
                     {staff.position}
