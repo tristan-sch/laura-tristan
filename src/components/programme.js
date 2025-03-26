@@ -1,7 +1,7 @@
 import React from "react";
 import tw from "twin.macro";
 import Image from "next/image";
-import hero from "../../public/404.png";
+import hero from "../../public/optimized-images/404.png";
 import { ProgrammeContainerWrapper } from "../misc/Layouts.js";
 
 const Container = tw.div`relative`;
@@ -35,6 +35,8 @@ const Programme = () => {
               width={768}
               height={512}
               css={[tw`rounded`]}
+              loading="lazy"
+              unoptimized={true}
             />
           </ImageColumn>
           <TextColumn>

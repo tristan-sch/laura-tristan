@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import dynamic from "next/dynamic";
 import Nav from "../Nav/nav";
-import hero from "../../../public/hero.png";
+import hero from "../../../public/optimized-images/hero.png";
 import ChevronDown from "../../../public/chevronDown.svg";
 
 const Countdown = dynamic(() => import("../Header/countdown"), {
@@ -58,6 +58,8 @@ const Header = () => {
                     alt="Chevron Down Icon"
                     width={18}
                     height={18}
+                    loading="lazy"
+                    // unoptimized={true}
                   />
                   <Link href="#programme">
                     <PlayText>C&#39; est parti</PlayText>
@@ -67,7 +69,14 @@ const Header = () => {
             </LeftColumn>
             <RightColumn>
               <IllustrationContainer>
-                <Image alt="Hero image" src={hero} width={768} height={512} />
+                <Image
+                  alt="Hero image"
+                  src={hero}
+                  width={768}
+                  height={512}
+                  loading="lazy"
+                  unoptimized={true}
+                />
               </IllustrationContainer>
             </RightColumn>
           </TwoColumn>

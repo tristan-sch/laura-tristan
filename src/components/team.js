@@ -4,7 +4,7 @@ import Image from "next/image";
 import tw, { styled, css } from "twin.macro";
 import { TeamContainerWrapper, TeamContainer } from "../misc/Layouts.js";
 import { SectionDescription } from "../misc/Typography.js";
-import ChevronDown from "../../public/optimized-images/chevronDown.svg";
+import ChevronDown from "../../public/chevronDown.svg";
 import Florian from "../../public/optimized-images/Florian.jpg";
 import Karsten from "../../public/optimized-images/Karsten.jpg";
 import Laetitia from "../../public/optimized-images/Laetitia.jpg";

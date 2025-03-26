@@ -32,7 +32,14 @@ const MobileNav = () => {
   return (
     <MobileNavWrapper>
       <OpenButton type="button" aria-label="Toggle Menu" onClick={onToggleNav}>
-        <Image src={hamburger} alt="Hamburger Icon" width={50} height={50} />
+        <Image
+          src={hamburger}
+          alt="Hamburger Icon"
+          width={50}
+          height={50}
+          loading="lazy"
+          unoptimized={true}
+        />
       </OpenButton>
       <div
         css={[
@@ -46,7 +53,14 @@ const MobileNav = () => {
             aria-label="Toggle Menu"
             onClick={onToggleNav}
           >
-            <Image src={close} alt="Close Icon" width={50} height={50} />
+            <Image
+              src={close}
+              alt="Close Icon"
+              width={50}
+              height={50}
+              loading="lazy"
+              unoptimized={true}
+            />
           </CloseButton>
         </CloseButtonWrapper>
         <MobileLinksWrapper>
