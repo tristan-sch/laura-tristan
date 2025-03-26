@@ -153,8 +153,10 @@ const Team = ({
                 css={[tw`rounded-full`]}
                 src={staff.imageSrc}
                 alt="Team member photo"
-                width={160}
-                height={160}
+                loading="lazy"
+                unoptimized={true}
+                // width={160}
+                // height={160}
               />
               <CardContent>
                 <SliderPosition css={styles[staff.color]}>
@@ -174,16 +176,20 @@ const Team = ({
                 <Image
                   src={ChevronDown}
                   alt="Previous button icon"
-                  width={24}
-                  height={24}
+                  loading="lazy"
+                  unoptimized={true}
+                  // width={24}
+                  // height={24}
                 />
               </PrevButton>
               <NextButton onClick={sliderRef?.slickNext}>
                 <Image
                   src={ChevronDown}
                   alt="Next button icon"
-                  width={24}
-                  height={24}
+                  loading="lazy"
+                  unoptimized={true}
+                  // width={24}
+                  // height={24}
                 />
               </NextButton>
             </Controls>
@@ -196,8 +202,10 @@ const Team = ({
                     css={[tw`rounded-full`]}
                     src={staff.imageSrc}
                     alt="Team member photo"
-                    width={160}
-                    height={160}
+                    loading="lazy"
+                    unoptimized={true}
+                    // width={160}
+                    // height={160}
                   />
                   <SliderPosition css={styles[staff.color]}>
                     {staff.position}
